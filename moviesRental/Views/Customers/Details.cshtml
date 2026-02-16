@@ -4,5 +4,15 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.Customer.Name</h2>
+@if (Model.Name == "Boitumelo Mi-Amor")
+{
+    <h2>
+        I love you 😍&#10084;
+    </h2>
+}
+else
+{
+    <h2>You are my friend</h2>
+}
+
 

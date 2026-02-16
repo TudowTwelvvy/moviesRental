@@ -8,7 +8,7 @@
 <h2>Customers</h2>
 
 <div class="btn-group-vertica row-gap-3 d-flex flex-column ">
-    @foreach (var customer in Model.Customers)
+    @foreach (var customer in Model)
     {
 
         <button type="button" class="btn btn-outline-primary btn-sm" onclick="location.href='@Url.Action("Details", "Customers",new { id = customer.Id })'">

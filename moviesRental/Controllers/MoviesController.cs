@@ -1,23 +1,22 @@
-﻿using moviesRental.ViewModels;
+﻿using moviesRental.DAL;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace moviesRental.Controllers
 {
     public class MoviesController : Controller
     {
+
+        private MoviesContext db = new MoviesContext();
         // GET: Movies/Random
         public ActionResult Random()
         {
-            var movie = ;
-
-            var viewModel = new RondomMovieModel
-            {
-                Movie = movie,
-                Customers = customers
-            };
+            var movies = db.Movies.ToList();
 
 
-            return View(viewModel);
+
+
+            return View(movies);
         }
 
         /*[Route("movies/released/{year}/{month}")]
