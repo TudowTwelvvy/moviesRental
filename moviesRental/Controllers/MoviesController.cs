@@ -1,4 +1,4 @@
-﻿using moviesRental.Models;
+﻿using moviesRental.ViewModels;
 using System.Web.Mvc;
 
 namespace moviesRental.Controllers
@@ -8,9 +8,16 @@ namespace moviesRental.Controllers
         // GET: Movies/Random
         public ActionResult Random()
         {
-            var movie = new Movie() { Name = "Shrek!" };
+            var movie = ;
 
-            return View(movie);
+            var viewModel = new RondomMovieModel
+            {
+                Movie = movie,
+                Customers = customers
+            };
+
+
+            return View(viewModel);
         }
 
         /*[Route("movies/released/{year}/{month}")]

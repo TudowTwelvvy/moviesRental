@@ -1,30 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace moviesRental.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        /*public ActionResult Index()
         {
             return View();
         }
-
-        public ActionResult About()
+        public ActionResult Customers()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Customers page...";
+            return View();
+        }
+
+        public ActionResult Movies()
+        {
+            ViewBag.Message = "Movies page...";
+            return View();
+        }
+
+        public ActionResult Register()
+        {
+            ViewBag.Message = "Register page...";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Login()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Login Please...";
 
             return View();
-        }
+        }*/
     }
 }
